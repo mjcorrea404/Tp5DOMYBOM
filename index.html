@@ -14,33 +14,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Practica de DOM y BOM</title>
   </head>
-  <body>
-    <body>
 
-        <h1>Números Mágicos</h1>
-        <p>Ingresa un número</p>
-        
-        <input type="number" id="numero">
-        <button onclick="adivinar()">Enviar</button>
-        
-        <script>
-            
-            let numeroMagico = Math.floor(Math.random() * 500) + 1;
-            
-            function adivinar() {
-                
-                let numeroUsuario = document.getElementById("numero").value;
-                
-                
-                if (numeroUsuario == numeroMagico) {
-                    alert("¡Felicidades! Adivinaste el número.");
-                } else if (numeroUsuario > numeroMagico) {
-                    alert("El número que ingresaste es mayor que el número mágico.");
-                } else {
-                    alert("El número que ingresaste es menor que el número mágico.");
-                }
-            }
-        </script>
-        <script src="/js/exercise1.js"></script>
-    </body>
+  <body>
+    <h1>Números Mágicos</h1>
+    <p>Ingresa un número</p>
+
+    <input type="number" id="numero" />
+    <button onclick="adivinar()">Enviar</button>
+
+    <script src="/js/exercise1.js"></script>
+  </body>
 </html>
